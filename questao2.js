@@ -17,10 +17,10 @@ rl.question("Digite o número: ", (numero) => {
   if (fibonacci.includes(Number(numero))) {
     console.log(`O número ${numero} pertence à sequência Fibonacci.`);
     console.log("Sequência Fibonacci até o número informado:", fibonacci);
-    return true;
   } else {
     console.log(`O número ${numero} não pertence à sequência Fibonacci.`);
     console.log("Sequência Fibonacci até o número informado:", fibonacci);
-    return false;
   }
+
+  rl.close();
 });
